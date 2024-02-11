@@ -11,7 +11,7 @@ console.log(puppies)
        <h1>hello world</h1>
         { 
           puppies.map((puppy) => {
-            return <p key={puppy.name}>{puppy.name}</p>
+            return <p key={puppy.id}>{puppy.name}</p>
           })
         }
       </div>
