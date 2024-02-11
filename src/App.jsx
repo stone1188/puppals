@@ -19,7 +19,7 @@ function App() {
               </p>;
            })
         }
-        <p>{featPupId}</p>
+        { featPupId && <p>{ featPupId }</p> } 
       </div>   
     </>
   );
