@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
 const [puppies, setPuppies] = useState(puppyList)
-console.log(puppies);
+// console.log(puppies);
   return (
     <>
       <div className='App'>
