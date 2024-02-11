@@ -3,12 +3,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-// const [puppies, setPuppies] = useState(puppyList)
-// console.log(puppies)
+const [puppies, setPuppies] = useState(puppyList)
+console.log(puppies)
   return (
     <>
       <div>
        <h1>hello world</h1>
+        { 
+          puppies.map((puppy) => {
+            return <p key={puppy.name}>{puppy.name}</p>
+          })
+        }
       </div>
       
     </>
