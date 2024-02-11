@@ -14,12 +14,12 @@ function App() {
        
         { 
           puppies.map((puppy) => {
-             return <p onClick={()=>{console.log("puppy id: ", puppy.id)}} key={puppy.id}>
+             return <p onClick={()=>{setFeatPupId(puppy.id)}} key={puppy.id}>
               {puppy.name}
-              
               </p>;
            })
         }
+        <p>{featPupId}</p>
       </div>   
     </>
   );
